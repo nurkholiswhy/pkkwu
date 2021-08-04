@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VIDEO MATERI PKKWU</title>
+	<link rel="stylesheet" href="">
+	<!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  <!--- Font Awesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css" />
+ 
+     	<!-- Style CSS -->
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<!--<button class="btn btn-default btn-xs"><span class="fa fa-eye"></span></button>-->
+    <style>
+
+/*-- Reset --*/
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+/*============= NAVIGATION =============*/
+.navbar.bg-light {
+    background-color: #0b5858!important;
+}
+.navbar-light .navbar-toggler {
+  color: #f8f9fa;
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar {
+  background: linear-gradient(to right: #f2f2f2, #FBFBFB);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 78%);
+}
+.nav-item {
+  padding: .4rem;
+}
+.nav-link{
+  font-size: 0.8005rem;
+  font-weight: 500;
+  color: white!important;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #f1c40f!important;
+}
+/* dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+  font-size: 0.8005rem;
+  font-weight: 500;
+  color: white!important;
+    text-align: left;
+    list-style: none;
+    background-color: #0b5858!important;
+    background-clip: padding-box;
+    border-radius: .25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: white!important;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:hover {
+  color: #f1c40f!important;
+}
+
+/*============= CAROUSEL =============*/
+.carousel-inner {
+  max-height: 26rem!important;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+  transition: transform: 1.2s ease;
+}
+.carousel-indicators li {
+  width: 40px;
+  height: 6px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+/*-- Carousel Content --*/
+
+
+/*============= SOCIAL MEDIA STICKY BAR =============*/
+
+.jumbotron {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  padding: 0.3rem 0 .5rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+ul.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+ul.social li {
+  margin: 0 auto;
+}
+.jumbotron .svg-inline--fa {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.jumbotron .svg-inline--fa:hover {
+  color: gray!important;
+}
+/*============= COLUMN CONTENT =============*/
+.fa-square {
+  opacity: .05;
+}
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+  height: 100vh; /*-- remove --*/
+  overflow: hidden;
+}
+.fixed {
+  background-image: url('../img/imac.jpg');
+  position: fixed;
+}
+
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+.jumbotron .svg-inline--fa {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+}
+}
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+
+
+/* TUTORIAL */
+.card-body {
+    flex-direction: column;
+    display: flex;
+    flex: 1 0 auto;
+    height: auto;
+    position: relative;
+}
+
+.card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+.card .kategori-post {
+    font-size: 10.5pt;
+    font-weight: 700;
+}
+
+.card .text-a {
+    color: #f1c40f!important;
+}
+
+.card a {
+    color: #0b5858;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.card .post-meta {
+    margin-top: 15px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+    </style>
+</head>
+<body>
+		<div id="navigation-sticky">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="logo-white.png" alt="Logo" title="Logo"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBit">
+				    <i class="fas fa-stream navbar-toggler-icon"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarBit">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home </a>
+					    </li>
+
+					     <!--<li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Tutorial
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					          <a class="dropdown-item" href="#">Action</a>
+					          <a class="dropdown-item" href="#">Another action</a>
+					          <a class="dropdown-item" href="#">Something else here</a>
+					        </div>
+					      </li>-->
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Tutorial</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Sourecode</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Blog</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">Playlist</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">About</a>
+					    </li>
+					</ul>
+				</div>
+			</div>	
+		</nav>
+
+
+	<div class="container">
+        
+     <table id="example" class="table table-striped">
+        <thead>
+            <tr>
+                <th>TABLE OF CONTENT - PRODUK KREATIF KEWIRAUSAHAAN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button class="btn btn-default btn-xs video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/7aGm9hcHWTU" data-target="#myModal"><span class="fa fa-play"></span></button> BAB 1 - KEWIRAUSAHAAN</td>
+            </tr>
+     
+        </tbody>
+    </table>
+	</div>
+
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
+</div>
+       
+       
+
+	</div> <!-- End Navigation Sticky ID Section -->
+
+  <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+		$(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+// document ready  
+});
+</script>
+</body>
+</html>
